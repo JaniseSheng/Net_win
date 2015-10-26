@@ -1,0 +1,107 @@
+@import "prefixer";
+@import "button";
+
+body {
+  margin: 0;
+  width: 1920px;
+  height:1080px;
+  background-color: #e3e3e3;
+  background-image: url("../image/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+/*  background: white; /!* 备用属性 *!/
+  background: -moz-linear-gradient(top, #dedede, white 8%, red 20%);
+  background-image: -moz-linear-gradient(50% 180px 90deg, #000000 0%, #FFFFFF 30%, #336600 60%, #662C13 90%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#ff821f), to(#c3ff9a));*/
+}
+
+#NetSpeed {
+  background-color: #565656;
+  opacity: 0.92;
+  position: relative;
+  height: 100%;
+  padding: 12px 24px;
+  #conntent {
+    position: relative;
+    height: 77%;
+
+    #district {
+      width: 60%;
+      height: 100%;
+      float: right;
+      mark{
+        display: block;
+        position: relative;
+        padding: 12px 24px;
+        margin-top: 24px;
+        background-color: rgba(46, 204, 113, 0.12);
+        border: 1px solid #2ecc71;
+        color: snow;
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    #inputRoul {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* right: 0; */
+      margin: auto;
+      height: 100%;
+      width: 30%;
+      margin-top: 64px;
+      //height: 40%;
+      width: 60%;
+
+      & > div:first-of-type {
+        position: absolute;
+        top: 0;
+        left: 48px;
+        margin: auto;
+      }
+
+      > mark {
+        background-color: #800DC7;
+        position: absolute;
+        bottom: 12px;
+        color: white;
+        font-size: 24px;
+        line-height: 36px;
+        margin-left: 240px;
+        padding: 12px 48px;
+        margin-bottom: 48px;
+      }
+    }
+  }
+
+  .head {
+    height: 96px;
+    border-bottom: 1px solid #800DC7;
+    & > h2 {
+      font-size: 2.6em;
+      display: block;
+      float: left;
+      color: snow;
+    }
+    & > img {
+      float: right;
+      width: 84px;
+    }
+  }
+
+}
+
+footer {
+  position: fixed;
+  bottom: 24px;
+  width: 100%;
+  > a {
+    font-size: 2.2em;
+    position: absolute;
+    right: 24px;
+    float: right;
+    bottom: 0;
+  }
+}

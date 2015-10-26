@@ -1,0 +1,177 @@
+.button {
+  display: inline-block;
+  padding: 13px 36px 11px 36px;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -ms-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+.button i {
+  opacity: 0.8;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -ms-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+.button:hover i {
+  opacity: 1;
+}
+.button.green {
+  border: 1px solid #2ecc71;
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+.button.green:hover {
+  background-color: transparent;
+}
+.button.blue {
+  border: 1px solid #1894f2;
+  background-color: #1894f2;
+  color: #ffffff;
+}
+.button.blue:hover {
+  background-color: transparent;
+  color: #1894f2;
+}
+.button.sign-up {
+  border: 1px solid #1894f2;
+  background-color: #1894f2;
+  color: #ffffff;
+}
+.button.sign-up:hover {
+  background-color: transparent;
+}
+@media (max-width: 767px) {
+  .button.sign-up {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .button.sign-up:hover {
+    border: 1px solid #1894f2;
+  }
+}
+.button.log-in {
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+.button.log-in:hover {
+  border: 1px solid #1894f2;
+}
+.button.board {
+  border: 1px solid #2ecc71;
+  color: #ffffff;
+}
+.button.board:hover {
+  border: 1px solid #7774c5;
+}
+body {
+  margin: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #e3e3e3;
+  background-image: url("../image/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*  background: white; /!* 备用属性 *!/
+  background: -moz-linear-gradient(top, #dedede, white 8%, red 20%);
+  background-image: -moz-linear-gradient(50% 180px 90deg, #000000 0%, #FFFFFF 30%, #336600 60%, #662C13 90%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#ff821f), to(#c3ff9a));*/
+}
+#NetSpeed {
+  background-color: #565656;
+  opacity: 0.92;
+  position: relative;
+  height: 100%;
+  padding: 12px 24px;
+}
+#NetSpeed #conntent {
+  position: relative;
+  height: 77%;
+}
+#NetSpeed #conntent #district {
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+#NetSpeed #conntent #district mark {
+  display: block;
+  position: relative;
+  padding: 12px 24px;
+  margin-top: 24px;
+  background-color: rgba(46, 204, 113, 0.12);
+  border: 1px solid #2ecc71;
+  color: snow;
+  font-size: 24px;
+  line-height: 36px;
+}
+#NetSpeed #conntent #inputRoul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* right: 0; */
+  margin: auto;
+  height: 100%;
+  width: 30%;
+  margin-top: 64px;
+  width: 60%;
+}
+#NetSpeed #conntent #inputRoul > div:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 48px;
+  margin: auto;
+}
+#NetSpeed #conntent #inputRoul > mark {
+  background-color: #800DC7;
+  position: absolute;
+  bottom: 12px;
+  color: white;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 240px;
+  padding: 12px 48px;
+  margin-bottom: 48px;
+}
+#NetSpeed .head {
+  height: 96px;
+  border-bottom: 1px solid #800DC7;
+}
+#NetSpeed .head > h2 {
+  font-size: 2.6em;
+  display: block;
+  float: left;
+  color: snow;
+}
+#NetSpeed .head > img {
+  float: right;
+  width: 84px;
+}
+footer {
+  position: fixed;
+  bottom: 24px;
+  width: 100%;
+}
+footer > a {
+  font-size: 2.2em;
+  position: absolute;
+  right: 24px;
+  float: right;
+  bottom: 0;
+}
