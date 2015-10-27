@@ -85,7 +85,6 @@ body {
   width: 1920px;
   height: 1080px;
   background-color: #e3e3e3;
-  background-image: url("../image/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,84 +93,148 @@ body {
   background-image: -moz-linear-gradient(50% 180px 90deg, #000000 0%, #FFFFFF 30%, #336600 60%, #662C13 90%);
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#ff821f), to(#c3ff9a));*/
 }
+#imgbg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+#picAutoRoll {
+  position: absolute;
+  top: 200px;
+  left: 660px;
+}
+#picAutoRoll > div {
+  width: 1076px;
+  height: 666px;
+  background-color: #ffdddd;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+#picAutoRoll > div > div {
+  height: 100%;
+  width: 50%;
+  opacity: 0.6;
+  position: absolute;
+  z-index: 1;
+}
+#picAutoRoll > div > div.buttonLeft {
+  left: 0;
+}
+#picAutoRoll > div > div.buttonRight {
+  right: 0;
+}
+#picAutoRoll > div > ul {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+}
+#picAutoRoll .imagesCenter {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+#picAutoRoll .picaminate.rollLeft {
+  -webkit-transition: left 1s ease-in-out 0 0;
+  -moz-transition: left 1s ease-in-out 0 0;
+  -o-transition: left 1s ease-in-out 0 0;
+  -ms-transition: left 1s ease-in-out 0 0;
+  transition: left 1s ease-in-out 0 0;
+}
 #NetSpeed {
-  background-color: #565656;
-  opacity: 0.92;
-  position: relative;
+  position: absolute;
+  z-index: 5;
+  width: 600px;
+  height: 600px;
+  top: 300px;
+  left: 245px;
+}
+#NetSpeed > #inputRoul {
+  width: 100%;
   height: 100%;
-  padding: 12px 24px;
-}
-#NetSpeed #conntent {
-  position: relative;
-  height: 77%;
-}
-#NetSpeed #conntent #district {
-  width: 60%;
-  height: 100%;
-  float: right;
-}
-#NetSpeed #conntent #district mark {
-  display: block;
-  position: relative;
-  padding: 12px 24px;
-  margin-top: 24px;
-  background-color: rgba(46, 204, 113, 0.12);
-  border: 1px solid #2ecc71;
-  color: snow;
-  font-size: 24px;
-  line-height: 36px;
-}
-#NetSpeed #conntent #inputRoul {
   position: absolute;
   top: 0;
   left: 0;
-  /* right: 0; */
-  margin: auto;
-  height: 100%;
-  width: 30%;
-  margin-top: 64px;
-  width: 60%;
 }
-#NetSpeed #conntent #inputRoul > div:first-of-type {
+#scrollText {
   position: absolute;
-  top: 0;
-  left: 48px;
-  margin: auto;
+  z-index: 7;
+  width: 1550px;
+  height: 32px;
+  padding: 12px 0;
+  background-color: rgba(45, 45, 38, 0.7);
+  bottom: 123px;
+  left: 185px;
 }
-#NetSpeed #conntent #inputRoul > mark {
-  background-color: #800DC7;
-  position: absolute;
-  bottom: 12px;
-  color: white;
-  font-size: 24px;
-  line-height: 36px;
-  margin-left: 240px;
-  padding: 12px 48px;
-  margin-bottom: 48px;
-}
-#NetSpeed .head {
-  height: 96px;
-  border-bottom: 1px solid #800DC7;
-}
-#NetSpeed .head > h2 {
-  font-size: 2.6em;
-  display: block;
-  float: left;
+#scrollText > p {
+  font-size: 32px;
+  line-height: 32px;
   color: snow;
-}
-#NetSpeed .head > img {
-  float: right;
-  width: 84px;
-}
-footer {
-  position: fixed;
-  bottom: 24px;
-  width: 100%;
-}
-footer > a {
-  font-size: 2.2em;
+  width: 1240px;
   position: absolute;
-  right: 24px;
-  float: right;
-  bottom: 0;
+  margin: 0;
+  -webkit-animation: roateEvent 8s infinite;
+  -moz-animation: roateEvent 8s infinite;
+  -ms-animation: roateEvent 8s infinite;
+  -o-animation: roateEvent 8s infinite;
+  animation: roateEvent 8s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@keyframes roateEvent {
+  0% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes roateEvent {
+  0% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
 }
