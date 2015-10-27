@@ -33,4 +33,10 @@ $(document).ready(function(){
     effect.setfirst();
     effect.setbase();
     console.log("123");
+
+/*    if(window.fullScreenApi.supportsFullScreen){
+        window.fullScreenApi.requestFullScreen(document.getElementById('fullscreenbox'));
+    }else{
+        alert('就你这浏览器，基本就告别全屏功能了');
+    }*/
 })
