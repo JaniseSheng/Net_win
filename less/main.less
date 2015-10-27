@@ -107,23 +107,23 @@ body {
     font-size: 32px;
     line-height: 32px;
     color: snow;
-    width: 1240px;
+    width: 320px;
     position: absolute;
     margin: 0;
-    .animation(roateEvent 8s infinite);
+    .animation(roateEvent 12s infinite);
     .animation-timing-function(linear);
     @keyframes roateEvent
     {
-      0% {.transform(translateX(0%));}
-      50% {.transform(translateX(100%));}
-      100% {.transform(translateX(0%));}
+      0% {.transform(translateX(0px));}
+      50% {.transform(translateX(1200px));}
+      100% {.transform(translateX(0px));}
     }
 
     @-webkit-keyframes roateEvent
     {
-      0% {.transform(translateX(0%));}
-      50% {.transform(translateX(100%));}
-      100% {.transform(translateX(0%));}
+      0% {.transform(translateX(0px));}
+      50% {.transform(translateX(1200px));}
+      100% {.transform(translateX(0px));}
     }
   }
 }
